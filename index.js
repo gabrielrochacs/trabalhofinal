@@ -2,7 +2,7 @@ const express = require('express');
 const db = require('./db');
 
 const app = express();
-const port = 3001;
+const port = 3000;
 
 // Endpoint para verificar se a aplicação está viva
 app.get('/liveness', (req, res) => {
