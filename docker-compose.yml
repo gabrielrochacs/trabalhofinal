@@ -11,7 +11,7 @@ services:
       MYSQL_PASSWORD: passwd
       MYSQL_DATABASE: db_aula
     ports:
-      - "3307:3306"
+      - "3306:3306"
     volumes:
       - ./carga.sql:/docker-entrypoint-initdb.d/carga.sql
     networks:
@@ -29,7 +29,7 @@ services:
       - DB_PASSWORD=passwd
       - DB_NAME=db_aula
     ports:
-      - "3001:3000"
+      - "3000:3000"
     depends_on:
       - db
     networks:

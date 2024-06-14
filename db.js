@@ -2,9 +2,9 @@ const mysql = require('mysql');
 require('dotenv').config(); // Se estiver usando variáveis de ambiente
 
 const connection = mysql.createConnection({
-    host: process.env.DB_HOST || 'localhost',
-    user: process.env.DB_USER || 'root',
-    password: process.env.DB_PASSWORD || '',
+    host: process.env.DB_HOST || 'mysql',
+    user: process.env.DB_USER || 'user',
+    password: process.env.DB_PASSWORD || 'passwd',
     database: process.env.DB_NAME || 'db_aula',
     multipleStatements: true // Permite múltiplas consultas em uma única string
 });
