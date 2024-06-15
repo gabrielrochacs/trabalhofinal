@@ -45,7 +45,7 @@ password: passwd
 6)SELECT * FROM exemplo;
 
 LINK DO DOCKERHUB:
-<https://hub.docker.com/repository/docker/gsrcordeiro/trabalhofinal/general>
+<https://hub.docker.com/r/gsrcordeiro/trabalhofinal>
 
 LINK DO GITHUB:
 <https://github.com/gabrielrochacs/trabalhofinal>
