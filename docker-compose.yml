@@ -25,7 +25,7 @@ services:
     container_name: nodejs_app
     restart: always
     environment:
-      - DB_HOST=db
+      - DB_HOST=mysql
       - DB_USER=user
       - DB_PASSWORD=passwd
       - DB_NAME=db_aula
