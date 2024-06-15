@@ -16,7 +16,6 @@ services:
       - type: bind
         source: ./carga.sql
         target: /docker-entrypoint-initdb.d/carga.sql
-      # Outros volumes, networks e configurações de serviço podem ser adicionados aqui conforme necessário
 
   nodejs:
     build:
