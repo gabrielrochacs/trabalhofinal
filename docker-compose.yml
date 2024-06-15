@@ -16,6 +16,8 @@ services:
       - type: bind
         source: ./carga.sql
         target: /docker-entrypoint-initdb.d/carga.sql
+    networks:
+      - app-network
 
   nodejs:
     build:
@@ -24,12 +26,12 @@ services:
     container_name: nodejs_app
     restart: always
     environment:
-      - DB_HOST=mysql
+      - DB_HOST=db  # Use o nome do serviço 'db' aqui
       - DB_USER=user
       - DB_PASSWORD=passwd
       - DB_NAME=db_aula
     ports:
-      - "3001:3001"
+      - "3000:3000"
     depends_on:
       - db
     networks:
