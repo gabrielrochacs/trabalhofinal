@@ -1,6 +1,10 @@
 # Trabalho final
 
-Professor Não consegui fazer as consultas pelo navegador, não sei onde errei, peço que considere que pelo terminal é possível fazer as consultas e os dados segue como pode ser realizado.
+Professor Não consegui fazer as consultas pelo navegador da atividade 4, não sei onde errei, peço que considere que pelo terminal é possível fazer as consultas e os dados segue como pode ser realizado.
+
+As portas são:
+Nodejs: 3000
+mysql: 3306
 
 """alguns comandos basicos"""
 npm install mysql@latest --save
