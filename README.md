@@ -2,20 +2,24 @@
 
 Professor Não consegui fazer as consultas pelo navegador, não sei onde errei, peço que considere que pelo terminal é possível fazer as consultas e os dados segue como pode ser realizado.
 
+"""alguns comandos basicos"""
+npm install mysql@latest --save
+npm install express mysql
+
 1. Configuração do Banco de Dados
 1.1. Executar o Banco de Dados MySQL
 docker run -d -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=user -e MYSQL_PASSWORD=passwd -e MYSQL_DATABASE=db_aula mysql/mysql-server:latest
 
-3. Publicação no GitHub
+3.Publicação no GitHub
 3.1. Comandos para Subir a Aplicação para o GitHub
 cd trabalhofinal
 git init
 git add .
 git commit -m "Primeira versão da aplicação"
-git remote add origin https://github.com/gabrielrochacs/trabalhofinal.git
+git remote add origin <https://github.com/gabrielrochacs/trabalhofinal.git>
 git push -u origin main
 
-4. Criação e Publicação do Contêiner no Docker Hub
+4.Criação e Publicação do Contêiner no Docker Hub
 4.1. Build e Push da Imagem Docker
 docker build -t gsrcordeiro/trabalhofinal:1.0 .
 docker login -u gsrcordeiro
@@ -37,7 +41,7 @@ password: passwd
 6)SELECT * FROM exemplo;
 
 LINK DO DOCKERHUB:
-https://hub.docker.com/repository/docker/gsrcordeiro/trabalhofinal/general
+<https://hub.docker.com/repository/docker/gsrcordeiro/trabalhofinal/general>
 
 LINK DO GITHUB:
-https://github.com/gabrielrochacs/trabalhofinal
+<https://github.com/gabrielrochacs/trabalhofinal>
